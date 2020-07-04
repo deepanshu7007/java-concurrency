@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static final String SOURCE_FILE = "./resources/many-flowers.jpg";
+    public static final String SOURCE_FILE = "./resources/lesson11/many-flowers.jpg";
     public static final String DESTINATION_FILE = "./out/many-flowers.jpg";
     public static void main(String[] args) throws IOException {
         BufferedImage originalImage = ImageIO.read(new File(SOURCE_FILE));
@@ -26,7 +26,7 @@ public class Main {
 
         long duration = endTime - startTime;
 
-        System.out.println(String.valueOf(duration));
+        System.out.println(duration);
 
         File output = new File(DESTINATION_FILE);
         ImageIO.write(resultImage, "jpg", output);
